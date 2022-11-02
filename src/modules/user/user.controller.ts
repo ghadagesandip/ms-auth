@@ -27,7 +27,7 @@ export default class AuthController extends BaseApi {
       const limit = <number>(<unknown>req.query.limit) || 10;
 
       const userLib = new AuthLib();
-      const userListResponse: any = await userLib.index(page, limit);
+      const userListResponse: any = await userLib.index(page-1, limit);
       res.locals.data = userListResponse;
       responsehandler.send(res);
     } catch (err) {
