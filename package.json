@@ -11,7 +11,7 @@
     "lint": "eslint src/**/*.ts",
     "lint:fix": "eslint src/**/*.ts --fix",
     "dev": "tsnd --respawn src/index.ts",
-    "deploy": "git add . && git commit -m Heroku && git push heroku master",
+    "deploy": "git add . && git commit -m Heroku && git push heroku main",
     "postinstall": "npm run build"
   },
   "devDependencies": {
