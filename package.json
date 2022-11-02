@@ -58,5 +58,5 @@
       "pre-commit": "yarn lint"
     }
   },
-  "engines": { "node": "16.18.0" },
+  "engines": { "node": "16.18.0" }
 }
